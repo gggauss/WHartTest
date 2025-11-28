@@ -104,7 +104,7 @@ jobs:
           labels: ${{ steps.meta-mcp.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
+          
       - name: Image digest
         run: |
           echo "Backend: ${{ steps.meta-backend.outputs.tags }}"
